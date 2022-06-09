@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .texto {
+        width: 200px;
+        height: 1500px;
+        overflow: auto;
+        background-color: #ccc;
+        padding: 20px;
+        border: 2px solid red;
+      }
+      .scrollbutton {
+        width: 40px;
+        height: 40px;
+        border-radius: 15px;
+        background-color: red;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        z-index: 999;
+        cursor: pointer;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="texto">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
+      impedit suscipit maiores repellat sed id, nam ipsam asperiores placeat
+      molestias nihil maxime corrupti atque ut delectus fugiat debitis eligendi
+      enim?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
+      impedit suscipit maiores repellat sed id, nam ipsam asperiores placeat
+      molestias nihil maxime corrupti atque ut delectus fugiat debitis eligendi
+      enim?
+    </div>
+
+    <div onclick="subirTela()" class="scrollbutton"></div>
+
+    <script src="/B7WEB-JavaScript-Training/MODULO 3/07dimensoes.js"></script>
+  </body>
+</html>

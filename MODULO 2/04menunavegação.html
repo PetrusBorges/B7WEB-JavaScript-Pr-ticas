@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: #eeeeee;
+      }
+
+      aside {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        display: flex;
+      }
+
+      #menu-opener {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+
+      #menu-area {
+        width: 0px;
+        height: 100vh;
+        background-color: #ccc;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: all ease 0.5s;
+      }
+
+      #menu-area ul,
+      #menu-area li {
+        padding: 0;
+        list-style: none;
+      }
+
+      #menu-area li {
+        display: block;
+        padding: 10px;
+        color: #555;
+        cursor: pointer;
+      }
+
+      #menu-area li:hover {
+        background-color: #ddd;
+      }
+
+      .menu-opened {
+        width: 200px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="titulo">Seja bem vindo</h1>
+
+    <aside>
+      <div id="menu-opener" onclick="menuToggle()">
+        <img src="/B7WEB-JavaScript-Training/MODULO 2/04menu.svg" alt="menu" />
+      </div>
+      <div id="menu-area">
+        <ul>
+          <li>Home</li>
+          <li>Sobre</li>
+          <li>Contato</li>
+        </ul>
+      </div>
+    </aside>
+    <script src="/B7WEB-JavaScript-Training/MODULO 2/04menunavegação.js"></script>
+  </body>
+</html>
